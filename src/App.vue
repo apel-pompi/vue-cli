@@ -1,24 +1,31 @@
 <template>
     
     <div>
-      <Header :myName="Student"/>
-      <Futter/>
+      <ListHelperVue>
+        
+      </ListHelperVue>
+      
     </div>
 
 </template>
 
 <script>
-import  Header  from "./components/Header_Futter/Header";
-import  Futter  from "./components/Header_Futter/Futter";
+import ListHelperVue from './components/ListHelper.vue'
 export default {
+
   data(){
-    return{
-      Student:['Ashrafur Rahman','Apel','Khokon','Pompi']
+    return {
+      list: ['html','css','php','java'],
+      loader:''
     }
   },
   components:{
-    Header,
-    Futter,
+    ListHelperVue
+  },
+  created(){
+    setTimeout(()=>{
+      this.loader = 'other'
+    },3000)
   }
   
 }
