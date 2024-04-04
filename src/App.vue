@@ -1,7 +1,7 @@
 <template>
     
     <div>
-      <Header/>
+      <Header :myName="name"/>
       <Futter/>
     </div>
 
@@ -11,6 +11,11 @@
 import  Header  from "./components/Header_Futter/Header";
 import  Futter  from "./components/Header_Futter/Futter";
 export default {
+  data(){
+    return{
+      name:'Ashrafur Rahman'
+    }
+  },
   components:{
     Header,
     Futter,
