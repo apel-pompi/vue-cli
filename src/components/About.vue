@@ -1,11 +1,11 @@
 <template>
     <div>
-        list helper vue page
+        About vue page
     </div>
 </template>
 
 <script>
 export default {
-    name:'list-helper-page'
+    name:'About-page'
 }
 </script>
